@@ -7,49 +7,54 @@ html {
 
 body {
   font-family: Manrope, sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   background-color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+div {
   letter-spacing: -0.03em;
 }
-
 .container {
-  margin-right: 125px;
-  margin-left: 125px;
   width: 1150px;
   margin: 0 auto;
   margin: 0 125px;
   scroll-margin-top: 26px;
 }
-
+header {
+  width: 1400px;
+  padding: 33px 0px 0px;
+}
 .menu {
   margin-bottom: 70px;
-  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  padding-top: 33px;
   width: 1150px;
   text-align: center;
-  letter-spacing: -0.03em;
 }
 
 .nav {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
   padding: 0;
   font-size: 18px;
   text-transform: uppercase;
   line-height: 25px;
 }
 
-.nav li a {
-  padding-left: 60px;
+.nav__link {
+  margin-left: 58px;
+
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 25px;
   color: #000;
-  display: block;
 }
-.nav li a:hover {
-  text-decoration: underline;
-  color: grey;
+.nav__link:hover {
+  opacity: 50%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -57,30 +62,28 @@ h1 {
   height: 120px;
   font-size: 60px;
   line-height: 60px;
-  letter-spacing: -0.03em;
   word-wrap: break-word;
 }
 .text-kreslo {
-  width: 430px;
-  height: 81px;
   position: absolute;
   left: 40px;
   bottom: 40px;
+  width: 430px;
+  height: 81px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
   font-size: 20px;
-  letter-spacing: -0.03em;
   line-height: 27.32px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .kreslo {
-  background-image: url(../resources/Rectangle\ 1.png);
+  position: relative;
   width: 1150px;
   height: 500px;
   margin-top: 30px;
   margin-bottom: 150px;
   box-sizing: border-box;
-  position: relative;
+  background-image: url(../resources/Rectangle\ 1.png);
 }
 .who-mi {
   width: 1051px;
@@ -88,103 +91,104 @@ h1 {
   margin-bottom: 150px;
 }
 .text {
-  margin-bottom: 30px;
-  padding-left: 3px;
-  display: block;
-  box-sizing: border-box;
-  color: #121212;
   width: 1048px;
   height: 366px;
+  margin-bottom: 30px;
+  padding-left: 3px;
+  box-sizing: border-box;
+  display: block;
   font-size: 45px;
   font-weight: 400;
   line-height: 61.47px;
-  letter-spacing: -0.03em;
   text-align: left;
+  color: #121212;
 }
 
 .btn {
-  margin-bottom: 150px;
-  display: block;
   width: 255px;
   height: 67px;
+  margin-bottom: 150px;
   padding: 20px 40px;
+  display: block;
   border-radius: 5px;
   text-align: center;
-  color: #fff;
-  background-color: #ad1818;
   font-size: 20px;
   font-weight: 400;
   line-height: 27.32px;
-  letter-spacing: -0.03em;
+  color: #fff;
+  background-color: #ad1818;
 }
 h2 {
   width: 1250px;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  margin-bottom: 30px;
 }
 
-.section__project {
+.block__project {
   margin-bottom: 90px;
   margin: 0 125px 0px 125px;
 }
 .item {
-  display: block;
   width: 1150px;
   height: 548px;
   margin-bottom: 90px;
+  display: block;
 }
 
 .item__img {
-  margin-bottom: 15px;
-  display: block;
   width: 100%;
   height: 450px;
+  margin-bottom: 15px;
+  display: block;
 }
-
-.item_title {
+.uslugi__text {
+  margin-top: 15px;
+  padding-left: 4px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40.98px;
+  text-align: left;
+  color: white;
+}
+h3 {
+  height: 41px;
   margin-bottom: 15px;
   margin-top: 15px;
-  height: 41px;
   font-weight: 400;
   font-size: 30px;
-  letter-spacing: -0.03em;
   line-height: 41px;
 }
 .item__about {
-  padding-left: 2px;
   width: 127px;
   height: 27px;
-  color: #ad1818;
   font-weight: 400;
   font-size: 20px;
   line-height: 27.32px;
-  letter-spacing: -0.03em;
   text-align: left;
+  color: #ad1818;
 }
 
 .btn__all-project {
+  width: 1150px;
+  height: 153px;
   margin: 0 auto;
   margin-bottom: 150px;
   padding: 56px 0;
-  display: block;
   border: 1px solid red;
   border-radius: 5px;
-  width: 1150px;
-  height: 153px;
+  display: block;
   font-size: 30px;
-  color: #ad1818;
   font-weight: 400;
   line-height: 40.98px;
-  letter-spacing: -0.03em;
   text-align: center;
+  color: #ad1818;
 }
 .btn__all-project:hover {
   color: white;
   background-color: red;
 }
-
 .uslugi {
   width: 1150px;
   height: 326px;
@@ -198,26 +202,25 @@ h2 {
   height: 270px;
 }
 .section__uslugi {
-  padding: 151px 125px 150px 125px;
-  box-sizing: border-box;
   width: 1400px;
   height: 1844px;
+  padding: 151px 125px 150px 125px;
+  box-sizing: border-box;
   background-color: rgba(18, 18, 18, 1);
 }
 
 .h2__uslugi {
+  width: 66px;
+  height: 25px;
   margin-bottom: 34px;
   padding-left: 2px;
   display: block;
-  color: white;
-  width: 66px;
-  height: 25px;
   font-size: 18px;
   font-size: 18px;
   font-weight: 400;
   line-height: 24.59px;
-  letter-spacing: -0.03em;
   text-align: left;
+  color: white;
 }
 
 .uslugi__text {
@@ -225,80 +228,74 @@ h2 {
   font-size: 30px;
   font-weight: 400;
   line-height: 40.98px;
-  letter-spacing: -0.03em;
   text-align: left;
   color: white;
 }
+
 .section__peizaj {
+  height: 717px;
   background-image: url(../resources/peizaj.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 717px;
 }
 
 .peizaj__text {
-  display: block;
   padding: 575px 832px 60px 125px;
+  display: block;
   font-size: 30px;
-  t1ext-align: left;
-  color: white;
   font-weight: 400;
   line-height: 40.98px;
-  letter-spacing: -0.03em;
   text-align: left;
+  color: white;
 }
 
 .contact {
-  position: relative;
-  margin: 186px 803px 150px 124px;
-  text-align: left;
   width: 473px;
   height: 217px;
+  position: relative;
+  margin: 187px 803px 150px 124px;
+  text-align: left;
 }
 .cont::before {
-  content: "";
-  display: block;
+  position: absolute;
+  top: -35px;
   width: 13px;
   height: 22px;
-  position: absolute;
+  content: "";
+  display: block;
   background-image: url(../resources/ikonka-tel.png);
-  top: -35px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .cont {
   font-weight: 400;
   font-size: 18px;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #000;
 }
 
 .namber {
   margin-top: 32px;
-  display: block;
   margin-bottom: 30px;
-  color: #000000;
+  display: block;
   font-size: 60px;
   font-weight: 400;
   line-height: 60px;
-  letter-spacing: -0.03em;
   text-align: left;
+  color: #000000;
 }
 
 .mail {
   font-size: 60px;
-  color: #000;
   opacity: 0.5;
   text-decoration: underline;
   font-weight: 400;
   line-height: 60px;
-  letter-spacing: -0.03em;
   text-align: left;
-  text-decoration: underline;
+  color: #000;
 }
 .mail:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid rgba(18, 18, 18, 1);
 }
 .menu__footer {
   width: 1400px;
@@ -306,11 +303,11 @@ h2 {
   background-color: black;
 }
 .nav__footer {
-  padding-top: 60px;
-  margin-left: 470px;
-  margin-right: 480px;
   width: 450px;
   height: 25px;
+  padding-top: 60px;
+  margin-left: 469px;
+  margin-right: 480px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -318,9 +315,7 @@ h2 {
 
 .nav__footer li a {
   font-size: 18px;
-
   line-height: 25px;
-
   color: #f4f4f4;
 }
 .nav__footer li a:hover {
@@ -328,15 +323,14 @@ h2 {
 }
 
 .footer__text {
-  display: block;
-  margin-left: 509px;
-  margin-top: 112px;
   width: 389px;
   height: 27px;
+  margin-left: 509px;
+  margin-top: 112px;
+  display: block;
   font-size: 20px;
   line-height: 27.32px;
   font-weight: 400;
   color: white;
   opacity: 0.5;
-  letter-spacing: -0.03em;
 }
