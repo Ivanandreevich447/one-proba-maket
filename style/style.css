@@ -7,7 +7,7 @@ html {
 
 body {
   font-family: Manrope, sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   background-color: #ffffff;
 }
 h1,
@@ -37,7 +37,7 @@ header {
   text-align: center;
 }
 
-.nav {
+.menu__nav a {
   padding: 0;
   font-size: 18px;
   text-transform: uppercase;
@@ -46,11 +46,13 @@ header {
 
 .nav__link {
   margin-left: 58px;
-
   font-size: 18px;
   text-transform: uppercase;
   line-height: 25px;
   color: #000;
+}
+.nav__link:nth-child(1) {
+   margin-left: 0;
 }
 .nav__link:hover {
   opacity: 50%;
@@ -64,7 +66,7 @@ h1 {
   line-height: 60px;
   word-wrap: break-word;
 }
-.text-kreslo {
+.sofa__text {
   position: absolute;
   left: 40px;
   bottom: 40px;
@@ -76,7 +78,7 @@ h1 {
   color: rgba(255, 255, 255, 1);
 }
 
-.kreslo {
+.sofa {
   position: relative;
   width: 1150px;
   height: 500px;
@@ -85,12 +87,12 @@ h1 {
   box-sizing: border-box;
   background-image: url(../resources/Rectangle\ 1.png);
 }
-.who-mi {
+.performance {
   width: 1051px;
   height: 518px;
   margin-bottom: 150px;
 }
-.text {
+.performance__text {
   width: 1048px;
   height: 366px;
   margin-bottom: 30px;
@@ -126,24 +128,24 @@ h2 {
   line-height: 25px;
 }
 
-.block__project {
+.project {
   margin-bottom: 90px;
   margin: 0 125px 0px 125px;
 }
-.item {
+.project__item {
   width: 1150px;
   height: 548px;
   margin-bottom: 90px;
   display: block;
 }
 
-.item__img {
+.project__item__img {
   width: 100%;
   height: 450px;
   margin-bottom: 15px;
   display: block;
 }
-.uslugi__text {
+.services__text {
   margin-top: 15px;
   padding-left: 4px;
   font-size: 30px;
@@ -160,7 +162,7 @@ h3 {
   font-size: 30px;
   line-height: 41px;
 }
-.item__about {
+.project__item__about {
   width: 127px;
   height: 27px;
   font-weight: 400;
@@ -170,7 +172,7 @@ h3 {
   color: #ad1818;
 }
 
-.btn__all-project {
+.project__btn {
   width: 1150px;
   height: 153px;
   margin: 0 auto;
@@ -189,19 +191,19 @@ h3 {
   color: white;
   background-color: red;
 }
-.uslugi {
+.services__item {
   width: 1150px;
   height: 326px;
   margin-bottom: 60px;
 }
-.uslugi:nth-child(5) {
+.services__item:nth-child(5) {
   margin-bottom: 0px;
 }
 
-.uslugi__img {
+.services__img {
   height: 270px;
 }
-.section__uslugi {
+.services {
   width: 1400px;
   height: 1844px;
   padding: 151px 125px 150px 125px;
@@ -209,7 +211,7 @@ h3 {
   background-color: rgba(18, 18, 18, 1);
 }
 
-.h2__uslugi {
+.services__title {
   width: 66px;
   height: 25px;
   margin-bottom: 34px;
@@ -223,7 +225,7 @@ h3 {
   color: white;
 }
 
-.uslugi__text {
+.services__text {
   margin-top: 15px;
   font-size: 30px;
   font-weight: 400;
@@ -232,14 +234,14 @@ h3 {
   color: white;
 }
 
-.section__peizaj {
+.bed {
   height: 717px;
   background-image: url(../resources/peizaj.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.peizaj__text {
+.bed__text {
   padding: 575px 832px 60px 125px;
   display: block;
   font-size: 30px;
@@ -256,7 +258,7 @@ h3 {
   margin: 187px 803px 150px 124px;
   text-align: left;
 }
-.cont::before {
+.username::before {
   position: absolute;
   top: -35px;
   width: 13px;
@@ -267,7 +269,7 @@ h3 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.cont {
+.username {
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
@@ -297,12 +299,12 @@ h3 {
 .mail:hover {
   border-bottom: 2px solid rgba(18, 18, 18, 1);
 }
-.menu__footer {
+.footer {
   width: 1400px;
   height: 229px;
   background-color: black;
 }
-.nav__footer {
+.footer__nav {
   width: 450px;
   height: 25px;
   padding-top: 60px;
@@ -313,12 +315,12 @@ h3 {
   justify-content: space-between;
 }
 
-.nav__footer li a {
+.footer__nav li a {
   font-size: 18px;
   line-height: 25px;
   color: #f4f4f4;
 }
-.nav__footer li a:hover {
+.footer__nav li a:hover {
   opacity: 0.5;
 }
 
